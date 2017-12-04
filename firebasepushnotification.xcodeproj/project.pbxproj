@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F53DB8A21FD5D82D00A09C10 /* UNServices.swift in Sources */ = {isa = PBXBuildFile; fileRef = F53DB8A11FD5D82D00A09C10 /* UNServices.swift */; };
+		F53DB8A41FD5D85E00A09C10 /* AlertService.swift in Sources */ = {isa = PBXBuildFile; fileRef = F53DB8A31FD5D85E00A09C10 /* AlertService.swift */; };
+		F53DB8A61FD5D88400A09C10 /* Product.swift in Sources */ = {isa = PBXBuildFile; fileRef = F53DB8A51FD5D88400A09C10 /* Product.swift */; };
+		F53DB8AA1FD5DA8600A09C10 /* ProductCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F53DB8A91FD5DA8600A09C10 /* ProductCell.swift */; };
 		F5C9C8C11FD46E7D009F7FB0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5C9C8C01FD46E7D009F7FB0 /* AppDelegate.swift */; };
 		F5C9C8C31FD46E7D009F7FB0 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5C9C8C21FD46E7D009F7FB0 /* ViewController.swift */; };
 		F5C9C8C61FD46E7D009F7FB0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F5C9C8C41FD46E7D009F7FB0 /* Main.storyboard */; };
@@ -26,6 +30,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		F53DB8A11FD5D82D00A09C10 /* UNServices.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UNServices.swift; sourceTree = "<group>"; };
+		F53DB8A31FD5D85E00A09C10 /* AlertService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertService.swift; sourceTree = "<group>"; };
+		F53DB8A51FD5D88400A09C10 /* Product.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Product.swift; sourceTree = "<group>"; };
+		F53DB8A91FD5DA8600A09C10 /* ProductCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductCell.swift; sourceTree = "<group>"; };
 		F5C9C8BD1FD46E7D009F7FB0 /* firebasepushnotification.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = firebasepushnotification.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F5C9C8C01FD46E7D009F7FB0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F5C9C8C21FD46E7D009F7FB0 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -56,6 +64,39 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		F53DB89D1FD5D7A600A09C10 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				F53DB8A51FD5D88400A09C10 /* Product.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		F53DB89E1FD5D7B800A09C10 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				F53DB8A91FD5DA8600A09C10 /* ProductCell.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		F53DB89F1FD5D7C100A09C10 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				F5C9C8C21FD46E7D009F7FB0 /* ViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		F53DB8A01FD5D7C800A09C10 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				F53DB8A11FD5D82D00A09C10 /* UNServices.swift */,
+				F53DB8A31FD5D85E00A09C10 /* AlertService.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
 		F5C9C8B41FD46E7D009F7FB0 = {
 			isa = PBXGroup;
 			children = (
@@ -77,8 +118,11 @@
 		F5C9C8BF1FD46E7D009F7FB0 /* firebasepushnotification */ = {
 			isa = PBXGroup;
 			children = (
+				F53DB8A01FD5D7C800A09C10 /* Services */,
+				F53DB89D1FD5D7A600A09C10 /* Model */,
+				F53DB89E1FD5D7B800A09C10 /* View */,
+				F53DB89F1FD5D7C100A09C10 /* Controller */,
 				F5C9C8C01FD46E7D009F7FB0 /* AppDelegate.swift */,
-				F5C9C8C21FD46E7D009F7FB0 /* ViewController.swift */,
 				F5C9C8C41FD46E7D009F7FB0 /* Main.storyboard */,
 				F5C9C8C71FD46E7D009F7FB0 /* Assets.xcassets */,
 				F5C9C8C91FD46E7D009F7FB0 /* LaunchScreen.storyboard */,
@@ -200,6 +244,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				F5C9C8C31FD46E7D009F7FB0 /* ViewController.swift in Sources */,
+				F53DB8A21FD5D82D00A09C10 /* UNServices.swift in Sources */,
+				F53DB8A61FD5D88400A09C10 /* Product.swift in Sources */,
+				F53DB8AA1FD5DA8600A09C10 /* ProductCell.swift in Sources */,
+				F53DB8A41FD5D85E00A09C10 /* AlertService.swift in Sources */,
 				F5C9C8C11FD46E7D009F7FB0 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
