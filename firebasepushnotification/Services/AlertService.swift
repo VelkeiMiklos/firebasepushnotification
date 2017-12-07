@@ -53,10 +53,10 @@ class AlertServices{
     static func subscribeAlert(in vc: UIViewController){
         let alert = UIAlertController(title: nil, message: nil, preferredStyle: .actionSheet)
         let subscribe = UIAlertAction(title: "Subscribe", style: .default) { (_) in
-
+            FIRMessagingService.instance.subscribe(topic: .newProducts)
         }
         let unSubscribe = UIAlertAction(title: "Unsubscribe", style: .default) { (_) in
-
+            FIRMessagingService.instance.unsubscribe(topic: .newProducts)
         }
         alert.addAction(subscribe)
         alert.addAction(unSubscribe)
